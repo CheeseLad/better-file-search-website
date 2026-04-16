@@ -1,0 +1,4 @@
+flask
+python_dotenv
+google-api-python-client
+google-auth
