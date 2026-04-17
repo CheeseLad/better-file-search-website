@@ -1,0 +1,19 @@
+services:
+  better-file-search-website-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_BACKEND_URL: ${VITE_BACKEND_URL:-http://localhost:5000}
+    container_name: better-file-search-website-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+  better-file-search-website-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: better-file-search-website-backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
