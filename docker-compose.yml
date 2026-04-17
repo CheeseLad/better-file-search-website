@@ -17,3 +17,7 @@ services:
     restart: unless-stopped
     ports:
       - "5000:5000"
+    environment:
+      - ROOT_FOLDER_ID=${ROOT_FOLDER_ID}
+    volumes:
+      - ./backend/better-file-search-sa.json:/app/better-file-search-sa.json:ro

@@ -92,7 +92,7 @@ function App() {
       ) : (
         <div className="m-2">
           <ul
-            className="grid grid-cols-3 gap-4 max-h-[70vh] items-start overflow-y-auto"
+            className="grid md:grid-cols-3 sm:grid-cols-1 gap-4 max-h-[70vh] items-start overflow-y-auto"
             data-testid="preview-list"
           >
             {results.map((file, i) => (
