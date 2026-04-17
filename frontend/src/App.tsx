@@ -24,7 +24,7 @@ function App() {
   const [results, setResults] = useState<Build[]>([]);
   const [branches, setBranches] = useState<Branch[]>([]);
   const [currentBranchName, setCurrentBranchName] = useState<string>("dev");
-  const apiBase = import.meta.env.VITE_API_BASE_URL ?? "http://127.0.0.1:5000";
+  const apiBase = import.meta.env.VITE_BACKEND_URL ?? "http://localhost:5000";
 
   function handleSwitchBranch(branchName: string) {
     setCurrentBranchName(branchName);
