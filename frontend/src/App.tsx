@@ -59,7 +59,7 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-900 p-2 text-slate-100">
       <h1 className="text-3xl font-bold mb-6 text-center pt-6">
-        Better File Search: Downloads
+        Better File Search - Downloads
       </h1>
 
       {branches.length > 0 && (
@@ -92,13 +92,13 @@ function App() {
       ) : (
         <div className="m-2">
           <ul
-            className="grid grid-cols-3 gap-4 max-h-[70vh] items-start"
+            className="grid grid-cols-3 gap-4 max-h-[70vh] items-start overflow-y-auto"
             data-testid="preview-list"
           >
             {results.map((file, i) => (
               <li
                 key={i}
-                className="p-4 bg-slate-800 rounded border border-slate-700"
+                className="p-4 bg-slate-800 rounded border border-slate-700 mr-4"
               >
                 <div className="font-semibold break-all">{file.file_name}</div>
                 <div className="text-sm text-slate-400 break-all">

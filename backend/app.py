@@ -90,7 +90,7 @@ def get_branches():
 
     folders = list_folders(ROOT_FOLDER_ID)
 
-    branches = [{"name": f["name"], "folder_id": f["id"]} for f in folders]
+    branches = [{"name": f["name"], "folder_id": f["id"]} for f in folders if f["name"].lower() != "manual"]
 
     return set_cached_response(
         cache_key, {"count": len(branches), "branches": branches}
