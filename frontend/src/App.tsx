@@ -62,6 +62,15 @@ function App() {
         Better File Search - Downloads
       </h1>
 
+      <div>
+        <p className="text-center text-slate-100 mb-4">
+          Postgres Binaries: <a href="https://drive.google.com/file/d/1M34cFHrkP8xJPhcdwTO0DKf7bZHHrpN3/view?usp=sharing" className="text-blue-500 underline">https://drive.google.com/file/d/1M34cFHrkP8xJPhcdwTO0DKf7bZHHrpN3/view?usp=sharing</a>
+        </p>
+        <p className="text-center text-slate-100 mb-4">
+          Python Embed Binaries: <a href="https://drive.google.com/file/d/1fMn7YIVXbJvcWucoshLBy3CvIrVMMwfK/view?usp=sharing" className="text-blue-500 underline">https://drive.google.com/file/d/1fMn7YIVXbJvcWucoshLBy3CvIrVMMwfK/view?usp=sharing</a>
+        </p>
+      </div>
+
       {branches.length > 0 && (
         <div className="p-6 items-center" data-testid="branch-switcher">
           <form className="flex gap-3 mb-6 flex-col" encType="application/json">
