@@ -23,7 +23,7 @@ type Branch = {
 function App() {
   const [results, setResults] = useState<Build[]>([]);
   const [branches, setBranches] = useState<Branch[]>([]);
-  const [currentBranchName, setCurrentBranchName] = useState<string>("dev");
+  const [currentBranchName, setCurrentBranchName] = useState<string>("main");
   const apiBase = import.meta.env.VITE_BACKEND_URL ?? "http://localhost:5000";
 
   function handleSwitchBranch(branchName: string) {
