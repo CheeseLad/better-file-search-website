@@ -63,11 +63,14 @@ function App() {
       </h1>
 
       <div>
+        <i className="text-center text-slate-400 mb-4 block">
+          Note: The following files are required for building the development environment locally. They are not required for the installer.
+        </i>
         <p className="text-center text-slate-100 mb-4">
-          Postgres Binaries: <a href="https://drive.google.com/file/d/1M34cFHrkP8xJPhcdwTO0DKf7bZHHrpN3/view?usp=sharing" className="text-blue-500 underline">https://drive.google.com/file/d/1M34cFHrkP8xJPhcdwTO0DKf7bZHHrpN3/view?usp=sharing</a>
+          Postgres Binaries: <a href="https://drive.google.com/file/d/1M34cFHrkP8xJPhcdwTO0DKf7bZHHrpN3/view?usp=sharing" className="text-blue-500 underline">Download Here</a>
         </p>
         <p className="text-center text-slate-100 mb-4">
-          Python Embed Binaries: <a href="https://drive.google.com/file/d/1fMn7YIVXbJvcWucoshLBy3CvIrVMMwfK/view?usp=sharing" className="text-blue-500 underline">https://drive.google.com/file/d/1fMn7YIVXbJvcWucoshLBy3CvIrVMMwfK/view?usp=sharing</a>
+          Python Embed Binaries: <a href="https://drive.google.com/file/d/1fMn7YIVXbJvcWucoshLBy3CvIrVMMwfK/view?usp=sharing" className="text-blue-500 underline">Download Here</a>
         </p>
       </div>
 
